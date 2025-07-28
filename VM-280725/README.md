@@ -1,4 +1,4 @@
-##Project Overview##
+##Project Overview
 
 This project provisions a Virtual Machine (VM) with the following configurations:
 1. Pre-installed Nginx web server
@@ -9,12 +9,12 @@ This project provisions a Virtual Machine (VM) with the following configurations
    - allow-app (for port 8000)
    - allow-egress (to allow all outgoing traffic)
 
-#Implementation Steps#
+##Implementation Steps
 Firewall Configuration
 Created custom firewall rules in the default VPC to allow neccessary traffic example SSH, HTTP
 
-#VM Creation#
+##VM Creation
 Launched a VM instance and applied the necessary network tags to associate it with the firewall rules
 
-#Web Server Setup#
+##Web Server Setup
 Added a metadata_startup script in the VM to installe Nginx and deployed a basic HTML page to verify the setup
