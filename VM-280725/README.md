@@ -17,4 +17,4 @@ Created custom firewall rules in the default VPC to allow neccessary traffic exa
 Launched a VM instance and applied the necessary network tags to associate it with the firewall rules
 
 ## Web Server Setup
-Added a metadata_startup script in the VM to installe Nginx and deployed a basic HTML page to verify the setup
+Added a metadata_startup script in the VM to install Nginx and deployed a basic HTML page to verify the setup
