@@ -44,3 +44,10 @@ resource "google_compute_instance" "my_vm"{
   metadata_startup_script = file(each.value.startup_script)
 
 }
+
+# Output public IPs
+output "vm_public_ips" {
+  value       = [for vm in google_compute_instance.my_vm : vm.network_interface[0].access_config[0].nat_ip]
+  description = "Public IPs of all VM instances"
+}
+
