@@ -15,11 +15,10 @@ cat <<EOF | sudo tee /var/www/html/index.html
 <head>
   <meta charset="UTF-8">
   <title>Animikha's Underwater World</title>
-  https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap
   <style>
     body {
       background: linear-gradient(to bottom, #00c6ff, #0072ff);
-      font-family: 'Fredoka One', cursive;
+      font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun, playful font */
       color: #ffffff;
       text-align: center;
       padding-top: 100px;
@@ -30,7 +29,7 @@ cat <<EOF | sudo tee /var/www/html/index.html
       margin-bottom: 20px;
       text-shadow: 0 0 10px #ffffff;
     }
-    .fish {
+   .fish {
       font-size: 4em;
       animation: swim 6s infinite linear;
       display: inline-block;
