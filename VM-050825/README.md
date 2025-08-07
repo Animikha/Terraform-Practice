@@ -8,6 +8,7 @@ This Terraform configuration creates multiple Google Cloud VM instances using a 
 - Tags VMs to allow SSH, HTTP, and app traffic.
 - Outputs the public IPs of all created VMs.
 
+
 ## How to Use
 Update the vm_instances variable with your desired VM configurations. Each entry should include:
 - name
