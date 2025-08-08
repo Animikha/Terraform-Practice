@@ -1,4 +1,4 @@
 provider "google" {
-  project = "thinking-seer-464009-e2"
+  project = "xxxxxx"
   region  = "europe-west2"
 }
