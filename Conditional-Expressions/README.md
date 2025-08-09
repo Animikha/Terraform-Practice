@@ -6,7 +6,7 @@ This Terraform configuration demonstrates using a **conditional expression** to 
 ```hcl
 locals {
   vm_count = var.environment == "prod" ? 3 : 2
-}
+}```
 If environment is "prod" → create 3 VMs
 
 Otherwise → create 2 VMs
