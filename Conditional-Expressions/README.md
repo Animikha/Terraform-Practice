@@ -6,31 +6,27 @@ This Terraform configuration demonstrates using a **conditional expression** to 
 ```hcl
 locals {
   vm_count = var.environment == "prod" ? 3 : 2
-}```
+}
+```
 If environment is "prod" → create 3 VMs
 
 Otherwise → create 2 VMs
 
-Setting the Environment
+## Setting the Environment
 You can set the environment variable in two ways:
 
 - Default value (in variables.tf):
+```hcl
 variable "environment" {
   default = "dev"
 }
+```
 
-- CLI argument (overrides default)
+- CLI argument (overrides default):
+ ```bash
 terraform apply -var="environment=prod"
-VM Details
-Google Compute Engine e2-medium instances
-
-Debian 11 image
-
-Zone: europe-west2-a
-
-Attached to the default network with external IPs
-
-Unique names using count.index
+```
+  
 
 
 
